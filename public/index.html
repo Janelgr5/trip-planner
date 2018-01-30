@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Trip Planner</title>
-    <link rel="stylesheet" href="./style.css"></link>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="./style.css"></link>
     <script src="./bundle.js" defer></script>
   </head>
-  <body>
+
+  <body id="top">
+
+    <div class="navbar">
+        <header class="navbar-header">
+            <nav class="navbar-links">
+                <a href="#top">
+                    <h2 class="navbar-item">Home</h2>
+                </a>
+                <a href="public/index.html">
+                    <h2 class="navbar-item">About</h2>
+                </a>
+                <a href="public/index.html">
+                    <h2 class="navbar-item">Contact</h2>
+                </a>
+            </nav>
+        </header>
+    </div>
+
+    <div class="options-panel">
+        <section class="options">
+            <aside class="aside options-aside">
+                <h3>Hotels</h3>
+                <h3>Restaurants</h3>
+                <h3>Things To Do</h3>
+            </aside>
+        </section>
+        
+    </div>
+
+    <div class="itinerary-panel">
+        <section class="itinerary">
+            <aside class="aside itinerary-aside">
+                <h1>My Itinerary:</h1>
+                <h3>My Hotels</h3>
+                <h3>My Restaurants</h3>
+                <h3>My Activities</h3>
+            </aside>
+        </section>
+    </div>
+
     <div id="map"></div>
+
   </body>
+
 </html>
